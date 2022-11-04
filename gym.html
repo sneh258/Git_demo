@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sneha</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<style>
+    /* css reset */
+
+    body {
+
+        color: aliceblue;
+        margin: 0px;
+        padding: 0px;
+        background: url("img.jpg");
+        background-size: auto;
+        background-repeat: no-repeat;
+        overflow-x: hidden;
+
+
+    }
+
+    .left {
+        display: inline-block;
+        position: absolute;
+        /* border: 2px solid red; */
+        left: 2px;
+        top: 20px;
+
+    }
+
+    .mid {
+
+        display: block;
+        width: 33%;
+        margin: 20px auto;
+
+
+        /* border: 2px solid green; */
+
+
+    }
+
+    .right {
+        display: inline-block;
+        position: absolute;
+        right: 6px;
+        top: 20px;
+        /* border: 2px solid yellow; */
+
+
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 20px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 35px 7px;
+
+
+    }
+
+    .navbar li a:hover {
+        text-decoration: underline;
+        color: grey;
+    }
+
+    .left img {
+        width: 106px;
+    }
+
+    .btn {
+        color: white;
+        background-color: black;
+        border: 2px solid white;
+    }
+
+    .btn:hover {
+
+        border: 2px solid white;
+        border-radius: 10px;
+        cursor: pointer;
+
+
+
+    }
+
+    .container {
+
+        /* border: 2px solid white; */
+        padding: 80px 740px;
+        margin: 96px 7px;
+        border-radius: 28px;
+        width: 33%;
+    }
+
+    .form-group input {
+
+        display: block;
+        width: 508px;
+        padding: 1px;
+        margin: 9px auto;
+        border: 2px solid black;
+        border-radius: 8px;
+    }
+
+    .container h1 {
+        font-family: 'Times New Roman', Times, serif;
+        text-align: center;
+        white-space: nowrap;
+
+    }
+
+    .form-group button{
+
+        display: block;
+        width: 508px;
+        margin: 11px auto;
+        
+    }
+</style>
+
+<body>
+
+    <header class="header">
+
+        <div class="left">
+            <!-- left for logo -->
+            <img src="logo.png" alt="">
+
+        </div>
+        <div class="mid">
+            <!-- for navigation -->
+            <ui class="navbar">
+                <li><a href="">Home</a></li>
+                <li><a href="">Contact Us</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Fitness Routine</a></li>
+            </ui>
+        </div>
+        <div class="right">
+            <!-- for buttons -->
+            <button class="btn">call us</button>
+            <button class="btn">email us</button>
+
+        </div>
+
+    </header>
+
+    <div class="container">
+
+        <h1>Join FITNESS OVERLOADED now!</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+
+                <input type="text" placeholder="Enter your name">
+                <input type="text" placeholder="Enter your contact number">
+                <input type="text" placeholder="Enter your age">
+                <input type="text" placeholder="Enter your city">
+                <button class="btn">submit</button>
+            </div>
+        </form>
+
+    </div>
+
+
+</body>
+
+</html>
